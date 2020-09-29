@@ -1,0 +1,38 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BogUkraine/chat.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "rabbitmq",
+    "elasticsearch",
+    "postgresql",
+    "socket",
+    "docker"
+  ],
+  "author": "Bohdan Lysov <BogUkraine@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BogUkraine/chat/issues"
+  },
+  "homepage": "https://github.com/BogUkraine/chat#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "graphql": "^15.3.0",
+    "nodemon": "^2.0.4",
+    "sequelize": "^6.3.5"
+  }
+}
