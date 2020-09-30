@@ -1,8 +1,8 @@
-const express     = require('express');
+const express         = require('express');
 const { graphqlHTTP } = require('express-graphql');
-const schema      = require('./lib/graphql/schemas/index');
-const resolvers   = require('./lib/graphql/resolvers/index');
-const config      = require('./config');
+const schema          = require('./lib/graphql/schemas/index');
+const resolvers       = require('./lib/graphql/resolvers/index');
+const config          = require('./config');
 
 const app = express();
 
@@ -11,15 +11,7 @@ app.use(express.json());
 
 app.use('/graphql', graphqlHTTP({
     schema    : schema,
-    rootValue : {
-        events : () => {
-            return ['kek', 'kek2']
-        },
-        createEvent: (args) => {
-            const eventName = args.name;
-            return eventName;
-        }
-    },
+    rootValue : resolvers,
     graphiql  : true,
     pretty    : true
 }))
