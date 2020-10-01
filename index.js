@@ -3,6 +3,7 @@ const { graphqlHTTP } = require('express-graphql');
 const schema          = require('./lib/graphql/schemas/index');
 const resolvers       = require('./lib/graphql/resolvers/index');
 const config          = require('./config');
+const initModels      = require('./lib/models/index');
 
 const app = express();
 
