@@ -9,8 +9,10 @@
 ----- im here -----
 6. add websockets
 7. add rabbitmq
-8. create channels
-9. AWS
-10. tests
-11. CI
-12. Elasticsearch
+8. create logging
+9. create channels
+10. cashing
+11. AWS
+12. tests
+13. CI
+14. Elasticsearch
